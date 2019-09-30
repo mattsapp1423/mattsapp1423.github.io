@@ -1,0 +1,115 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.landPG{
+	background-image: url(./header.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.Img-txt{
+	position:absolute;
+	top:35%;
+	left:50%;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+	transform: translate(-50%,-50%);
+	font-size: 60px;
+	color: white;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	transform-origin: center;
+	margin:0 auto;
+}
+.Img-txt:hover{
+	position:absolute;
+	text-align: center center;
+	animation-name: bounce0p5s;
+	animation-timing-function: linear;
+}
+
+.img-fluid{
+	min-height: 100vh;
+	max-height: 999px;
+	position:relative; 
+	overflow: hidden;
+}
+.btn{
+	background-color: orange;
+	border-radius: 20px;
+	width: 7em;
+	height: 2em;
+	font-size: .75em;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.modal-dialog{
+	width: 90%;
+}
+
+.form-row{
+	display:flex;
+	align-items: center;
+}
+
+.btn-wide{
+	width: 50vw;
+	position: relative;
+	top: 20px;
+}
+.needs-validation{
+	min-height: 290px;
+	border-radius: 20px;
+	background-color: white;
+	position: relative;
+	left:5%;
+	width: 85vw;
+}
+
+.container{
+	display: flex;
+	justify-content: space-around;	
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.row{
+	display: flex;
+	align-content: center;
+	width: 100%;
+	height: 25vh;
+}
+.centerText{
+	display: flex;
+	justify-content: space-around;	
+}
+
+
+h1{
+	font-size: 2.5vw;
+}
+h2{
+	font-size: 2.0vw;
+}
+
+@keyframes bounce0p5s {
+	0%	{transform: translate(-50%,-50%);}
+	50%	{transform: translate(-50%,-25%);}
+	100%{transform: translate(-50%,-50%);}
+}
